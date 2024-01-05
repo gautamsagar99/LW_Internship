@@ -1,0 +1,264 @@
+
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    /* background: linear-gradient(#141e30, #243b55); */
+    background: #141e30;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 700px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none; 
+    transition: .5s;
+  }
+
+  .login-box .userBox {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    /* border-bottom: 1px solid #fff; */
+    outline: none;
+    background: transparent;
+  }
+  
+
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form .submitButton {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px;
+    background-color: black;
+  }
+  
+  .login-box .submitButton:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box .submitButton span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box .submitButton span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box .submitButton span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box .submitButton span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box .submitButton span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+
+  select{
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-color: none;
+    
+}
+  
+::-webkit-inner-spin-button { 
+    display:none;
+  }
+  ::-webkit-calendar-picker-indicator { background-color:white}
+  input[type=date]{
+    font-size:15px;
+    width: 25%;
+  }
+  ::-webkit-datetime-edit-text { color:#555555}
+  ::-webkit-datetime-edit-month-field { color:#555555 }
+  ::-webkit-datetime-edit-day-field { color: #555555; }
+  ::-webkit-datetime-edit-year-field { color:#555555; }
+  ::-webkit-calendar-picker-indicator{ 
+    background-image: url(http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Calendar-icon.png);
+        background-position:center;
+         background-size:20px 20px;
+         background-repeat:no-repeat;
+        color:rgba(204,204,204,0);
+  }
+
+
+  .m-b-xs {
+    margin-bottom: 2%;
+  }
+  .m-b-md {
+    margin-bottom: 10%;
+  }
+  .m-t-xs {
+    margin-top: 2%;
+  }
+  .m-t-sm {
+    margin-top: 5%;
+  }
+
+
+  .radiolabel {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+
+
+	[type="checkbox"],
+	[type="radio"]{
+			display: inline-block;
+			position: relative;
+			top: 5px;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 23px;
+			width: 23px;
+			cursor: pointer;
+			border: 1px solid #FFF;
+	
+	}
+
+    [type="radio"] {
+        border-radius: 50%;
+
+        &:after {
+                border-radius: 50%;
+        }
+}
